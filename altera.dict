@@ -1,0 +1,454 @@
+
+" Vim dictionary file "
+
+" Language:	Altera-TCL/SDC "
+" Maintainer:	Paul Zimmer <paulzimmer@zimmerdesignservices.com> "
+" Original:	Paul Zimmer <paulzimmer@zimmerdesignservices.com> "
+" Version:	11.6 Sun Feb 21 19:18:56 PST 2010 "
+" "
+" "
+
+
+" Attributes "
+
+" Built-in Variables "
+
+" Commands "
+add_new_cell  -arith -cell_name -comb -crc -ddio_in -ddio_oe -ddio_out -extended -ff -hsadder -ibuf -location -obuf -partition_name
+add_new_io  -cell_name -direction -location
+add_row_to_table  -id -name
+add_to_collection 
+add_usage  -gen_id -node -port_id -port_type
+after 
+all_clocks 
+all_inputs 
+all_outputs 
+all_registers 
+append 
+apply_command 
+array anymore donesearch exists get names nextelement set size startsearch statistics unset
+assignment_group  -add_exception -add_member -comment -disable -get_exceptions -get_members -overwrite -remove -remove_exception -remove_member -tag
+auto_execok 
+auto_partition_design  -logic_max -logic_min -max_partitions -percent_to_partition -top_level
+begin_logic_analyzer_interface_control  -device_name -file_path -hardware_name
+begin_memory_edit  -device_name -hardware_name
+bgerror 
+break 
+catch 
+cd 
+change_bank_to_output_pin  -bank_index -bank_name -instance_name
+check_netlist_and_save 
+check_node  -gen_id -node
+check_timing  -append -file -include -panel_name -stdout
+checksum  -algorithm
+clock 
+close 
+close_chip_planner 
+close_device 
+close_session 
+compare_vector  -all_signals -begin -compare_clocks -compare_rule_value_0 -compare_rule_value_1 -compare_rule_value_dc -compare_rule_value_h -compare_rule_value_l -compare_rule_value_u -compare_rule_value_w -compare_rule_value_x -compare_rule_value_z -default_tolerance -end -expected -file -max_mismatches -signals -trigger_mode
+compute_pll  -family -input_freq -output_freqs -output_phases -pll_type -temp_dir
+compute_slack_on_edges  -min
+concat 
+connect_chain  -gen_id -node
+continue 
+convert_signal_probes 
+convert_vector  -file -format
+create_base_clock  -comment -disable -duty_cycle -entity -fmax -no_target -tag -target -virtual
+create_clock  -add -name -period -waveform
+create_generated_clock  -add -divide_by -duty_cycle -edge_shift -edges -invert -master_clock -multiply_by -name -offset -phase -source
+create_migrated_script  -file
+create_partition  -contents -partition
+create_relative_clock  -base_clock -comment -disable -divide -duty_cycle -entity -invert -multiply -no_target -offset -phase_shift -tag -target -virtual
+create_report_histogram  -color_div -color_list -max_data -min_data -num_bins -panel_name -x_label -x_unit -y_label
+create_report_panel  -folder -table
+create_revision  -based_on -copy_results -set_current
+create_simulation_breakpoint  -action -breakpoint -equation -user_message
+create_slack_histogram  -append -clock_name -file -hold -max_slack -min_slack -num_bins -panel_name -recovery -removal -setup -stdout
+create_timing_netlist  -fast_model -force_dat -grade -model -no_latch -post_map -set_fmax -skip_dat -speed -temperature -voltage -zero_ic_delays
+create_timing_summary  -append -file -hold -panel_name -recovery -removal -setup -stdout
+define_proc_attributes  boolean float int list merge_duplicates one_of_string optional remainder required string value_help values
+delete_all_logiclock 
+delete_all_partitions 
+delete_all_simulation_breakpoint 
+delete_logiclock  -region
+delete_partition  -partition
+delete_report_panel  -id -name
+delete_revision 
+delete_simulation_breakpoint  -breakpoint
+delete_sp  -pin_name
+delete_timing_netlist 
+derive_clock_uncertainty  -add -overwrite
+derive_clocks  -period -waveform
+derive_pll_clocks  -create_base_clocks -use_tan_name
+design_has_ace_support 
+design_has_encrypted_ip 
+device_dr_shift  -dr_value -length -no_captured_dr_value -value_in_hex
+device_ir_shift  -ir_value -no_captured_ir_value
+device_lock  -timeout
+device_run_test_idle  -num_clocks
+device_unlock 
+device_virtual_dr_shift  -dr_value -instance_index -length -no_captured_dr_value -show_equivalent_device_ir_dr_shift -value_in_hex
+device_virtual_ir_shift  -instance_index -ir_value -no_captured_ir_value -show_equivalent_device_ir_dr_shift
+disable_all_simulation_breakpoint 
+disable_natural_bus_naming 
+disable_simulation_breakpoint  -breakpoint
+disable_sp  -pin_name
+discard_all_changes 
+discard_node_changes  -gen_id -node
+else 
+elseif 
+enable_all_simulation_breakpoint 
+enable_ccpp_removal  -depth -off -on
+enable_natural_bus_naming 
+enable_sdc_extension_collections  -off -on
+enable_simulation_breakpoint  -breakpoint
+enable_sp  -pin_name
+end_insystem_source_probe 
+end_logic_analyzer_interface_control 
+end_memory_edit 
+eof 
+error 
+escape_brackets 
+eval 
+exec  -- -keepnewline
+execute_assignment_batch 
+execute_flow  -analysis_and_elaboration -check_ios -check_netlist -compile -compile_and_simulate -create_companion_revision -dont_export_assignments -early_timing_estimate -eco -eda_synthesis -export_database -fast_model -generate_functional_sim_netlist -import_database -incremental_compilation_export -incremental_compilation_import -signalprobe -vqm_writer
+execute_hc  -archive -compare -create_companion -handoff_report -hc_ready -min_archive
+execute_module  -args -dont_export_assignments -tool
+exit 
+export_assignments  -reorganize
+export_database 
+export_partition  -netlist_type -partition -qxp -routing
+export_stack_to  -applied -file
+expr abs acos asin atan atan2 ceil cos cosh double exp floor fmod hypot int log log10 pow round sin sinh sqrt tan tanh
+fast_write_to_simulation_memory  -address -data -node
+fblocked 
+fconfigure  -blocking -buffering -buffersize -eofchar -eofchar -translation -translation
+file  -force atime attributes channels copy delete dirname executable exists extension isdirectory isfile join link lstat mkdir mtime nativename normalize owned pathtype readable readlink rename rootname separator size split stat system tail type volumes writable
+fileevent 
+flush 
+for 
+force_simulation_value  -node
+foreach 
+foreach_in_collection 
+format 
+generate_bottom_up_scripts  -bottom_up_scripts_output_directory -disable_auto_global_promotion -include_all_logiclock_regions -include_design_partitions -include_global_signal_promotion -include_logiclock_regions -include_makefiles -include_pin_locations -include_project_creation -include_timing_assignments -include_virtual_input_pin_timing -include_virtual_output_pin_timing -include_virtual_pin_locations -include_virtual_pins -remove_existing_regions -virtual_input_pin_delay -virtual_output_pin_delay
+generate_vhdl_simgen_model  -family -files -result_dir -temp_dir -top_level_name
+get_all_assignment_names  -family -module -type
+get_all_assignments  -entity -from -name -section_id -tag -to -type
+get_all_global_assignments  -entity -name -section_id -tag
+get_all_instance_assignments  -entity -from -name -section_id -tag -to
+get_all_parameters  -entity -name -tag -to
+get_all_quartus_defaults  -name -section_id
+get_all_user_option_names  -name
+get_assignment_groups  -keepers -ports -registers
+get_assignment_info  -entity -from -get_tcl_command -name -section_id -tag -to -value
+get_assignment_name_info 
+get_available_operating_conditions  -all
+get_back_annotation_assignments 
+get_cell_info  -buried_nodes -buried_regs -in_pin_names -in_pins -location -name -out_pin_names -out_pins -pin_names -pins -type -wysiwyg_type
+get_cells  -compatibility_mode -hierarchical -no_duplicates -nocase -nowarn
+get_clock_delay_path  -from -to -type
+get_clock_domain_info  -hold -mpw -recovery -removal -setup
+get_clock_fmax_info 
+get_clock_info  -divide_by -duty_cycle -edge_shifts -edges -fall -is_inverted -latency -master_clock -master_clock_pin -max -min -multiply_by -name -nreg_neg -nreg_pos -offset -period -phase -rise -targets -type -waveform
+get_clocks  -nocase -nowarn -tag
+get_collection_size 
+get_current_revision 
+get_current_state_of_output_pin  -instance_name
+get_datasheet 
+get_default_sdc_file_names 
+get_delay_path  -from -to -type
+get_delays_from_clocks 
+get_delays_from_keepers 
+get_device_names  -hardware_name
+get_edge_info  -delay -delay_type -dst -ff -fr -max -min -name -rf -rr -src -type -unateness
+get_edge_slacks  -hold -recovery -removal -setup
+get_editable_mem_instances  -device_name -hardware_name
+get_environment_info  -num_logical_processors -num_physical_processors -operating_system
+get_family_list 
+get_fanins  -asynch -clock -inverting_paths -no_logic -non_inverting_paths -synch -through
+get_fanouts  -inverting_paths -no_logic -non_inverting_paths -through
+get_fitter_resource_usage  -alm -alut -available -io_pin -lab -le -mem_bit -percentage -reg -used -utilization
+get_global_assignment  -entity -front -name -section_id -tag
+get_hardware_names 
+get_illegal_delay_value 
+get_info_parameters  -file -for_chip
+get_instance_assignment  -entity -from -front -name -section_id -tag -to
+get_insystem_source_probe_instance_info  -device_name -hardware_name
+get_iports  -as_gen_id -gen_id -node -src_gen_id
+get_keepers  -no_duplicates -nocase -nowarn
+get_location_assignment  -tag -to
+get_logiclock  -auto_size -enabled -floating -height -origin -parent -region -reserved -soft -state -width
+get_logiclock_contents  -node_locations -region -root_region
+get_max_delay_value 
+get_min_pulse_width  -nworst
+get_name_info  -get_synonyms -info -observable_type -use_cached_database
+get_names  -entity -filter -library -node_type -observable_type
+get_net_info  -name -pin -type
+get_nets  -no_duplicates -nocase -nowarn
+get_node_by_name  -as_gen_id -name
+get_node_info  -asynch_edges -cell -clock_edges -fanout_edges -gen_id -info -location -name -node -synch_edges -type
+get_node_loc 
+get_nodes  -no_duplicates -nocase -nowarn -type
+get_number_of_columns  -id -name
+get_number_of_rows  -id -name
+get_object_info  -name -type
+get_operating_conditions 
+get_operating_conditions_info  -display_name -grade -model -name -speed -temperature -voltage
+get_oports  -as_gen_id -gen_id -node
+get_parameter  -entity -name -tag -to
+get_part_info  -default_voltage -device -family -family_variant -package -pin_count -speed_grade -temperature_grade
+get_part_list  -device -family -package -pin_count -speed_grade
+get_partition  -base_filename -color -contents -full_filename -netlist_type -partition -preservation_level -qxp
+get_partition_file_list  -exclude_compiled_partitions -use_placeholders
+get_partition_info  -child -name -parent -type
+get_partitions  -cell -hierarchical -nocase
+get_path  -from -min_path -npaths -nworst -pairs_only -show_routing -through -to
+get_path_info  -arrival_points -arrival_time -clock_relationship -clock_skew -data_delay -from -from_clock -from_clock_is_inverted -hold_end_multicycle -hold_start_multicycle -latch_time -launch_time -num_logic_levels -required_points -required_time -setup_end_multicycle -setup_start_multicycle -slack -to -to_clock -to_clock_is_inverted -type
+get_pin_info  -is_clock_pin -is_in_pin -is_out_pin -name -net -parent_cell -suffix -type
+get_pins  -compatibility_mode -hierarchical -no_duplicates -nocase -nowarn
+get_point_info  -edge -incremental_delay -location -node -number_of_fanout -rise_fall -total_delay -type
+get_port_by_type  -as_gen_id -gen_id -literal_index -node -port_type -type
+get_port_info  -edge_rate -gen_id -info -is_inout_port -is_input_port -is_output_port -name -node -port_id -type
+get_ports  -nocase -nowarn
+get_project_directory 
+get_project_revisions 
+get_register_info  -asynch_edges -clock_edges -fanout_edges -is_latch -name -synch_edges -tch -tcl -tco -th -tmin -tsu -type
+get_registers  -no_duplicates -nocase -nowarn
+get_report_panel_column_index  -id -name
+get_report_panel_data  -col -col_name -id -name -row -row_name
+get_report_panel_id 
+get_report_panel_names 
+get_report_panel_row  -id -name -row -row_name
+get_report_panel_row_index  -id -name
+get_rtl_cell_info  -in_pins -name -out_pins -pins -type
+get_rtl_cells  -hierarchical -nocase -tcl_string
+get_rtl_fanins  -inverting_paths -non_inverting_paths
+get_rtl_fanouts  -inverting_paths -non_inverting_paths
+get_rtl_pin_info  -is_gnd -is_in_pin -is_inverted -is_out_pin -is_vcc -name -parent_cell -type
+get_rtl_pins  -hierarchical -nocase -tcl_string
+get_simulation_memory_info  -node
+get_simulation_time 
+get_simulation_value  -node
+get_sp_pin_list 
+get_stack  -line -signalprobe -size -top_only
+get_tile_power_setting  -X -Y -gen_id
+get_timing_analysis_summary_results  -actual -clock_hold -clock_setup -min_tco -min_tpd -required -slack -tco -th -tpd -tsu
+get_timing_edge_delay  -cell -fall -ic -max -min -rise -total
+get_timing_edge_info  -info
+get_timing_edges 
+get_timing_node_fanin  -type
+get_timing_node_fanout 
+get_timing_node_info  -info
+get_timing_nodes  -type
+get_timing_paths  -detail -fall_from_clock -fall_to_clock -false_path -from -from_clock -hold -less_than_slack -npaths -nworst -pairs_only -recovery -removal -rise_from_clock -rise_to_clock -setup -show_routing -through -to -to_clock
+get_top_level_entity 
+get_user_option  -name
+gets 
+glob  -- -nocomplain
+global 
+group_simulation_signal  -name
+history 
+if 
+import_database 
+import_partition  -create_assignments -include_pin_assignments -partition -promote_assignments -qxp -update_assignments -update_logiclock
+incr 
+info args body cmdcount commands complete default exists globals hostname level library loaded locals nameofexecutable patchlevel procs script sharedlibextension tclversion vars
+init_tk 
+initialize_simulation  -cell_delay_model_type -check_outputs -end_time -ignore_vector_file -interconnect_delay_model_type -memory_limiter -perform_glitch_filtering -power_vcd_output -pvt_multicorner -pvt_temperature -pvt_timing_model_type -pvt_voltage -read_settings_files -saf_output -sim_mode -simulation_results_format -vector_source -write_settings_files
+interp 
+is_legal_delay_value 
+is_project_open 
+join 
+lappend 
+lindex 
+linsert 
+list 
+list_path  -append -clock_filter -clock_hold -clock_hold_io -clock_setup -clock_setup_io -dqs_read_capture -file -from -min_tco -min_tpd -npaths -src_clock_filter -stdout -tco -th -to -tpd -tsu
+list_sps 
+llength 
+load 
+load_package  -version
+load_report  -simulator
+load_rtl_netlist 
+locate  -chip -color -cps -label -rpe -tmv
+logiclock_back_annotate  -exclude_from -exclude_to -from -lock -no_contents -no_delay_chain -no_demote_lab -no_demote_mac -no_demote_pin -no_demote_ram -no_dont_touch -path_exclude -region -remove_assignments -resource_filter -routing -to
+lrange 
+lreplace 
+lsearch 
+lsort  -ascii -command -decreasing -dictionary -increasing -index -integer -real -unique
+make_ape_connection  -delay_chain_index -dst_node -gen_id -gnd -literal_index -port_type -src_gen_id -src_node -src_port -vcc
+make_input_port  -gen_id -literal_index -node -port_type
+make_output_port  -gen_id -literal_index -node -port_type
+make_sp  -clk -io_std -loc -pin_name -regs -reset -src_name
+open 
+open_device  -device_name -hardware_name
+open_session  -name
+p2p_timing_cut_exist  -from -to
+package  forget ifneeded names present provide require unknown vcompare versions vsatisfies
+parse_hdl  -core_params -indir_name -inhdl_files -module_list -module_name -outdir_name -supported_params
+parse_tcl  -core_params -core_sub_params -indir_name -intcl_files -module_name -outdir_name
+partition_netlist_exists  -netlist_type -partition
+partition_vector  -duration -file
+pid 
+pkg_mkIndex 
+post_message  -file -line -type
+proc 
+project_archive  -all_revisions -include_libraries -include_outputs -overwrite -use_file_set -version_compatible_database
+project_close  -dont_export_assignments
+project_exists 
+project_new  -family -overwrite -part -revision
+project_open  -current_revision -force -revision
+project_restore  -destination -overwrite -update_included_file_info
+puts 
+pwd 
+qexec 
+qexit  -error -success
+quartus_sh  --------- --------- --64bit --64bit --64bit --64bit --64bit --64bit --64bit --bank=<bank --bank=<bank --cell_delay_model_typ --cell_delay_model_type=<transport|inertial> --check_constraints[=<setup|hold|both>] --check_constraints[=<setup|hold|both>]........................................................................................ --check_outputs[=on|off] --check_outputs[=on|off] --combined_model[=on|off] --combined_model[=on|off] --create_signaltap_hdl_file --create_signaltap_hdl_file.................................................................................................... --create_timing_netlist --create_timing_netlist........................................................................................................ --datasheet[=<output --datasheet[=<output --delay_annotation_only --delay_annotation_only --disable --disable --do_min_analysis[=on|off] --do_min_analysis[=on|off] --do_report_timing --do_report_timing............................................................................................................. --dtw --dump_atom_generated_clocks --dump_atom_generated_clocks................................................................................................... --enable --enable --export_settings_files=off --export_settings_files=off --export_settings_files=on --export_settings_files=on --fast_model[=on|off] --fast_model[=on|off] --flow --fmax=<time --fmax=<time --force_dat --force_dat --grouping[=on|off] --grouping[=on|off] --help[=<option|topic>] --help[=<option|topic>] --help[=<option|topic>] --help[=<option|topic>] --help[=<option|topic>] --help[=<option|topic>] --help[=<option|topic>] --import_settings_files=off --import_settings_files=off --import_settings_files=on --import_settings_files=on --interconnect_delay_model_type=<tra --interconnect_delay_model_type=<transport|inertial> --lai_file=<.lai --lai_file=<.lai --logic_analyzer_interface --logic_analyzer_interface..................................................................................................... --lower_priority --lower_priority --lower_priority --lower_priority --lower_priority --lower_priority --lower_priority --memory_limiter[=on|off] --memory_limiter[=on|off] --mode=<functional|timing|timing_using_fast_timing_ --mode=<functional|timing|timing_using_fast_timing_model> --model=<fast|slow> --model=<fast|slow> --multicorner[=on|off] --multicorner[=on|off]......................................................................................................... --overwrite_waveform[=on|off] --overwrite_waveform[=on|off].................................................................................................. --parallel[=<num_processors>] --parallel[=<num_processors>].................................................................................................. --perform_glitch_filtering=<auto|always|never> --perform_glitch_filtering=<auto|always|never>........................................................................... --post_map --post_map --post_map --post_map --power_vcd_output=<target --power_vcd_output=<target --prepare --pvt_multicorner[=on|off] --pvt_multicorner[=on|off] --pvt_temperature=<value_in_C> --pvt_temperature=<value_in_C>................................................................................................. --pvt_timing_model_type=<slow|fast> --pvt_timing_model_type=<slow|fast>............................................................................................ --pvt_voltage=<value_in_mV> --pvt_voltage=<value_in_mV>.................................................................................................... --qboard --qhelp --qinstall --qsf2sdc --qsf2sdc...................................................................................................................... --qslave --read_settings_files --read_settings_files --read_settings_files[=on|off] --read_settings_files[=on|off] --read_settings_files[=on|off] --relcon --report_script=<NONE> --report_script=<NONE> --restore --rev=<revision --rev=<revision --rev=<revision --rev=<revision --rev=<revision --rev=<revision --rev=<revision --rev=<revision --saf_output=<target --saf_output=<target --script=<script --script=<script --script=<script --script=<script --script=<script --script=<script --script=<script --sdc=<NONE> --sdc=<NONE> --set --set=<assignment=value> --set=<assignment=value> --set=<assignment=value> --set=<assignment=value> --shell........................................................................................................................ --shell........................................................................................................................ --shell........................................................................................................................ --shell........................................................................................................................ --shell........................................................................................................................ --shell........................................................................................................................ --signaltap --signaltap.................................................................................................................... --simlib_comp --simulation_results_forma --simulation_results_format=<VWF|CVWF|VCD> --speed=<NONE> --speed=<NONE>................................................................................................................. --speed=<device --speed=<device --sso_inputs[=on|off] --sso_inputs[=on|off] --stp_file=<.stp> --stp_file=<.stp> --tao[=<.tao --tao[=<.tao --tao_summary --tao_summary --tcl_eval=<tcl --tcl_eval=<tcl --tcl_eval=<tcl --tcl_eval=<tcl --tcl_eval=<tcl --tcl_eval=<tcl --tcl_eval=<tcl --tco=<time --tco=<time --temperature=<value_in_C> --temperature=<value_in_C>..................................................................................................... --th=<time --th=<time --timing_analysis_only --timing_analysis_only......................................................................................................... --tpd=<time --tpd=<time --tq2hc --tq2hc --tq2pt --tq2pt........................................................................................................................ --tristate --tristate..................................................................................................................... --tsu=<time --tsu=<time --vector_comparison_rule_value_0= --vector_comparison_rule_value_0=<0,1,X,L,H,W,Z,U --vector_comparison_rule_value_1= --vector_comparison_rule_value_1=<0,1,X,L,H,W,Z,U --vector_comparison_rule_value_dc --vector_comparison_rule_value_dc=<0,1,X,L,H,W,Z,U --vector_comparison_rule_value_h= --vector_comparison_rule_value_h=<0 --vector_comparison_rule_value_l= --vector_comparison_rule_value_l=<0,1,X,L,H,W,Z,U --vector_comparison_rule_value_u= --vector_comparison_rule_value_u=<0 --vector_comparison_rule_value_w --vector_comparison_rule_value_w=<0 --vector_comparison_rule_value_x=< --vector_comparison_rule_value_x=<0 --vector_comparison_rule_value_z= --vector_comparison_rule_value_z=<0,1,X,L,H,W,Z,U --vector_source=<vector --vector_source=<vector --version --version...................................................................................................................... --version...................................................................................................................... --version...................................................................................................................... --version...................................................................................................................... --version...................................................................................................................... --version...................................................................................................................... --voltage=<value_in_mV> --voltage=<value_in_mV>........................................................................................................ --write_settings_files --write_settings_files --write_settings_files=off --write_settings_files=off --write_settings_files[=on|off] --write_settings_files[=on|off]................................................................................................ --write_settings_files[=on|off]................................................................................................ --zero_ic_delays --zero_ic_delays............................................................................................................... -archive -ascii -c=<revision -c=<revision -c=<revision -c=<revision -c=<revision -c=<revision -c=<revision -c=<revision -clock_filter -clock_hold -clock_setup -concurrent-compiles -content -custom-file -d -d............................................................................................................................. -decision-column -directory -directory -e -e -exploration-space -exploration-space -f=<argument -f=<argument -f=<argument -f=<argument -f=<argument -f=<argument -f=<argument -family -family -from -g[=on|off] -g[=on|off] -gui -gui -h -h............................................................................................................................. -h............................................................................................................................. -h............................................................................................................................. -h............................................................................................................................. -h............................................................................................................................. -h............................................................................................................................. -ignore-failed-base -language -language -llr-restructuring -log -log -lower-priority -lsf-queue -min_tco -min_tpd -nogui -optimization-goal -output -p[=on|off] -p[=on|off].................................................................................................................... -project -qda -remove -report-all-resource-usage -rev -revision -row_offset -row_offset -run-power -s -s -s -s -s -s -s -search-method -seeds -seeds -skip-base -slaves -stop-after-time -stop-after-zero-failing-paths -suppress_messages -suppress_messages -t=<script -t=<script -t=<script -t=<script -t=<script -t=<script -t=<script -tco -th -to -tool -tool -tpd -tsu -ui -use-lsf -v -v............................................................................................................................. -v............................................................................................................................. -v............................................................................................................................. -v............................................................................................................................. -v............................................................................................................................. -v.............................................................................................................................
+query_collection  -all -limit -list_format -report_format
+read 
+read_content_from_memory  -content_in_hex -instance_index -start_address -word_count
+read_from_simulation_memory  -address -node
+read_netlist  -force_post
+read_probe_data  -instance_index -value_in_hex
+read_sdc  -hdl
+read_source_data  -instance_index -value_in_hex
+read_xml_report 
+regexp  -- -indices -nocase
+regsub 
+release_simulation_value  -node
+remove_all_global_assignments  -entity -name -section_id -tag
+remove_all_instance_assignments  -entity -from -name -section_id -tag -to
+remove_all_parameters  -entity -name -tag -to
+remove_annotated_delay  -all
+remove_ape_connection  -dst_gen_id -dst_node -dst_port
+remove_chain  -gen_id -node
+remove_clock  -all
+remove_clock_groups  -all
+remove_clock_latency  -source
+remove_clock_uncertainty  -from -to
+remove_disable_timing  -from -to
+remove_from_collection 
+remove_input_delay 
+remove_input_port  -gen_id -literal_index -node -port_type
+remove_old_cell  -gen_id -node
+remove_output_delay 
+remove_output_port  -gen_id -literal_index -node -port_type
+remove_timing_tables 
+remove_usage  -gen_id -node -port_id -port_type
+rename 
+report_advanced_io_timing  -append -file -panel_name -stdout
+report_bottleneck  -cmetric -details -metric -nworst -panel_name -stdout
+report_clock_fmax_summary  -append -file -panel_name -stdout
+report_clock_transfers  -append -file -hold -panel_name -recovery -removal -setup -stdout
+report_clocks  -append -desc -file -panel_name -stdout -summary -waveform
+report_datasheet  -append -expand_bus -file -panel_name -stdout
+report_ddr  -append -file -panel_name -stdout
+report_device_info 
+report_exceptions  -append -detail -fall_from_clock -fall_to_clock -file -from -from_clock -hold -less_than_slack -npaths -nworst -pairs_only -panel_name -recovery -removal -rise_from_clock -rise_to_clock -setup -stdout -through -to -to_clock
+report_family_info 
+report_max_skew  -append -detail -file -less_than_slack -npaths -panel_name -show_routing -stdout
+report_metastability  -append -file -panel_name -stdout
+report_min_pulse_width  -append -detail -file -nworst -panel_name -stdout
+report_net_delay  -append -file -nworst -panel_name -stdout
+report_net_timing  -append -file -nworst_delay -nworst_fanout -panel_name -stdout
+report_part_info 
+report_partitions  -nworst -panel_name -stdout
+report_path  -append -file -from -min_path -npaths -nworst -pairs_only -panel_name -show_routing -stdout -summary -through -to
+report_rskm  -append -file -panel_name -stdout
+report_sdc  -append -file -ignored -panel_name -stdout
+report_skew  -append -detail -exclude -fall_from_clock -fall_to_clock -file -from -from_clock -greater_than_skew -include -npaths -panel_name -rise_from_clock -rise_to_clock -show_routing -stdout -through -to -to_clock
+report_tccs  -append -file -panel_name -stdout
+report_timing  -all_failures -append -clock_filter -clock_hold -clock_hold_core -clock_hold_io -clock_setup -clock_setup_core -clock_setup_io -detail -dqs_read_capture -fall_from_clock -fall_to_clock -false_path -file -from -from_clock -hold -less_than_slack -longest_paths -min_tco -min_tpd -npaths -nworst -pairs_only -panel_name -recovery -removal -rise_from_clock -rise_to_clock -setup -shortest_paths -show_routing -src_clock_filter -stdout -table -tco -th -through -to -to_clock -tpd -tsu
+report_ucp  -append -file -panel_name -stdout -summary
+reset_design 
+reset_timing_derate 
+resolve_file_path 
+return 
+revision_exists  -project
+routing_path  -dst_gen_id -file -node -port_id -table
+run  -check -data_log -device_name -hardware_name -instance -signal_set -timeout -trigger
+run_multiple_end 
+run_multiple_start 
+run_simulation  -time
+save_content_from_memory_to_file  -instance_index -mem_file_path -mem_file_type
+save_report_database 
+scan 
+seek 
+set 
+set_active_clocks 
+set_annotated_delay  -cell -ff -fr -from -max -min -net -operating_conditions -rf -rr -to
+set_batch_mode 
+set_clock_groups  -asynchronous -exclusive -group
+set_clock_latency  -clock -early -fall -late -rise -source -tag -to
+set_clock_uncertainty  -add -comment -disable -fall_from -fall_to -from -hold -remove -rise_from -rise_to -setup -tag -to
+set_current_revision  -force
+set_disable_timing  -from -to
+set_false_path  -fall_from -fall_to -from -hold -rise_from -rise_to -setup -through -to
+set_global_assignment  -comment -disable -entity -name -remove -section_id -tag
+set_input_delay  -add_delay -clk_ref -clock -clock_fall -comment -disable -fall -max -min -reference_pin -remove -rise -source_latency_included -tag -to
+set_input_transition  -clock -clock_fall -fall -max -min -rise
+set_instance_assignment  -comment -disable -entity -fall -from -name -remove -rise -section_id -tag -to
+set_io_assignment  -comment -disable -io_standard -name -remove -tag
+set_location_assignment  -comment -disable -remove -tag -to
+set_logiclock  -auto_size -enabled -floating -height -origin -parent -region -reserved -soft -width
+set_logiclock_contents  -delete_member_of -exceptions -exclude_from -exclude_node -exclude_to -from -location -priority -region -root_region -to
+set_max_delay  -fall_from -fall_to -from -rise_from -rise_to -through -to
+set_max_skew  -exclude -fall_from_clock -fall_to_clock -from -from_clock -include -rise_from_clock -rise_to_clock -through -to -to_clock
+set_min_delay  -fall_from -fall_to -from -rise_from -rise_to -through -to
+set_multicycle_assignment  -comment -disable -end -from -hold -remove -setup -start -tag -to
+set_multicycle_path  -end -fall_from -fall_to -from -hold -rise_from -rise_to -setup -start -through -to
+set_net_delay  -from -max -min -to
+set_node_info  -gen_id -info -node
+set_operating_conditions  -force_dat -grade -model -speed -temperature -voltage
+set_output_delay  -add_delay -clk_ref -clock -clock_fall -comment -disable -fall -max -min -reference_pin -remove -rise -source_latency_included -tag -to
+set_parameter  -comment -disable -entity -name -remove -tag -to
+set_partition  -color -netlist_type -partition -preservation_level -qxp
+set_port_info  -gen_id -info -node -port_id -type
+set_power_file_assignment  -remove -saf_file -section_id -to -vcd_end_time -vcd_file -vcd_start_time
+set_scc_mode  -size -use_heuristic
+set_simulation_clock  -clock -duty_cycle -offset -period
+set_tile_power_setting  -X -Y -gen_id -setting
+set_time_format  -decimal_places -unit
+set_timing_cut_assignment  -comment -disable -from -remove -tag -to
+set_timing_derate  -cell_delay -early -late -net_delay -operating_conditions
+set_user_option  -name
+sh 
+socket  -async -myaddr -myaddr -myport
+source 
+split 
+start_insystem_source_probe  -device_name -hardware_name
+stop 
+stopwatch  -lap_time -number_format -reset -start
+string  bytelength compare equal first index is last length map match range repeat replace tolower totitle toupper trim trimleft trimright wordend wordstart
+subst 
+switch  -- -exact -glob -regexp
+tell 
+test_assignment_trait  -name -trait
+then 
+time 
+timing_netlist_exist 
+trace 
+tristate_output_pin  -instance_name
+undo_command 
+unknown 
+unload_report 
+unload_rtl_netlist 
+unset 
+update 
+update_content_to_memory_from_file  -instance_index -mem_file_path -mem_file_type
+update_node_loc 
+update_timing_netlist  -full
+uplevel 
+upvar 
+use_timequest_style_escaping  -off -on
+vwait 
+while 
+write_content_to_memory  -content -content_in_hex -instance_index -start_address -word_count
+write_report_panel  -file -html -id -name -xml
+write_sdc  -expand -history
+write_source_data  -instance_index -value -value_in_hex
+write_to_simulation_memory  -address -data -node
+write_xml_report 

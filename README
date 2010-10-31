@@ -1,0 +1,3 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3306
+
+This is a syntax file for Altera Quartus (version .9.1) qsf files.  A dictionary file is included and will automatically link in if found to provide command completion.
